@@ -120,3 +120,6 @@ footer {
         .email-address a:hover {
             text-decoration: underline;
         }
+.spans{
+            color: red;
+        }
