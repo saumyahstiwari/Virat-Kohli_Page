@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Virat Kohli</title>
-    <link rel="icon" href="Image/VK1.png">
+    <link rel="icon" href="/Image/VK1.png">
     <link rel="stylesheet" href="css/contact.css">
 </head>
 
@@ -19,21 +19,24 @@
         <a href="contact.html">Contact</a>
     </nav>
     <div class="container">
-        <form action="Image/Success-Message-1.webp">
+        <form action="Image/2.jpg"  onsubmit="return validateAll()">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" onblur="validate1()" >
+            <span id="span1" class="spans"></span>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" onblur="validate2()" >
+            <span id="span2" class="spans"></span>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="textc" name="message" onblur="validate3()"></textarea>
+            <span id="span3" class="spans"></span> 
 
             <button type="submit">Submit</button>
         </form>
     </div>
     <section class="contact-info">
-        <img src="Image/VK1.png" alt="Virat Kohli">
+        <img src="/Image/VK1.png" alt="Virat Kohli">
         <div class="email-address">
             <a href="mailto:viratkohli@example.com">viratkohli@example.com</a>
         </div>
