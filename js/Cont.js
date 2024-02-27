@@ -55,3 +55,6 @@ function validateAll(){
     let c=validate3();
     return(a&&b&&c);
 }
+function refreshPage() {
+    window.location.reload();
+}
